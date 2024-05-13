@@ -1,0 +1,14 @@
+.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .completed input[type="checkbox"] {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .completed button {
+    display: none;
+  }
+  

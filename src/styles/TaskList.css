@@ -1,0 +1,82 @@
+.task-list {
+    margin-top: 20px;
+  }
+  
+  .task-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    position: relative; /* Add relative positioning for hover effect */
+    transition: background-color 0.3s ease; /* Add smooth background color transition */
+  }
+  
+  .task-item:hover {
+    background-color: #f5f5f5; /* Lighter background color on hover */
+  }
+  
+  .task-item.completed {
+    background-color: #f2f2f2;
+    text-decoration: line-through;
+  }
+  
+  .task-number {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000; /* Set task numbers to black */
+  }
+  
+  .task-text {
+    flex-grow: 1;
+    margin-right: 20px;
+    font-size: 16px;
+    color: #007bff; /* Set task text to blue */
+  }
+  
+  .task-item input[type="checkbox"] {
+    margin-right: 20px;
+  }
+  
+  .task-item button {
+    border: none;
+    background-color: transparent;
+    color: #ff5555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .task-item button:hover {
+    color: #ff0000;
+  }
+  
+  /* Add pseudo-element for delete button hover effect */
+  .task-item button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 10px;
+    border-color: transparent transparent transparent #ff5555;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    opacity: 0;
+  }
+  
+  .task-item button:hover::after {
+    border-color: transparent transparent transparent #ff0000;
+    transform: translate(-50%, -50%) rotate(-45deg) scale(1.2); /* Add scaling effect on hover */
+    opacity: 1;
+  }
+  
