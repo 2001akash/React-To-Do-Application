@@ -52,3 +52,4 @@ Follow these steps to set up and run the application locally:
    - Completed tasks will be crossed out and have a different background color.
 
 
+# Deployed Live Link: https://react-to-do-applications.netlify.app/
