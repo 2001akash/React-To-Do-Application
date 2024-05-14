@@ -33,8 +33,6 @@ Follow these steps to set up and run the application locally:
    ```
    This command will start the development server and open the application in your default web browser.
 
-
-
 ## Usage
 
 1. **Adding a Task:**
@@ -54,9 +52,3 @@ Follow these steps to set up and run the application locally:
    - Completed tasks will be crossed out and have a different background color.
 
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-Make sure to replace `"https://github.com/your-username/todo-app.git"` in the clone URL with the actual URL of your GitHub repository. Adjust any other details or instructions as needed based on your specific project setup.
